@@ -1,11 +1,15 @@
 from flask import Flask, jsonify, request, redirect, url_for
 from flask_pymongo import PyMongo
+from flask_cors import CORS, cross_origin
 
-app =  Flask(__name__)
+app = Flask(__name__)
+cors = CORS(app)
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/users-db'
-
+app.config['CORS_Headers'] = 'Content-Type'
 mongo = PyMongo(app)
 
+
+# GET /users - Returns a list of all users.
 @app.route('/', methods=['GET'])
 def retrieveAll():
     holder = []
@@ -17,7 +21,9 @@ def retrieveAll():
     return jsonify(holder)
 
 
+# GET /users/<id> - Returns the user with the specified ID.
 @app.route('/<id>', methods=['GET'])
+@cross_origin()
 def retrieveFromId(id):
     currentCollection = mongo.db.users
     data = currentCollection.find_one({"id": id})
@@ -27,6 +33,7 @@ def retrieveFromId(id):
         return jsonify({'message': 'User not found'})
 
 
+# POST /users - Creates a new user with the specified data.
 @app.route('/postData', methods = ['POST'])
 def postData():
     currentCollection = mongo.db.users
@@ -42,6 +49,7 @@ def postData():
         return jsonify({'message': 'Error'})
 
 
+# PUT /users/<id> - Updates the user with the specified ID with the new data.
 @app.route('/deleteData/<id>', methods = ['DELETE'])
 def deleteData(id):
     currentCollection = mongo.db.users
@@ -50,6 +58,7 @@ def deleteData(id):
     return redirect(url_for('retrieveAll'))
 
 
+# DELETE /users/<id> - Deletes the user with the specified ID.
 @app.route('/update/<id>', methods = ['PUT'])
 def updateData(id):
     currentCollection = mongo.db.users
