@@ -49,7 +49,7 @@ def postData():
         return jsonify({'message': 'Error'})
 
 
-# PUT /users/<id> - Updates the user with the specified ID with the new data.
+# DELETE /users/<id> - Deletes the user with the specified ID.
 @app.route('/deleteData/<id>', methods = ['DELETE'])
 def deleteData(id):
     currentCollection = mongo.db.users
@@ -58,7 +58,7 @@ def deleteData(id):
     return redirect(url_for('retrieveAll'))
 
 
-# DELETE /users/<id> - Deletes the user with the specified ID.
+# PUT /users/<id> - Updates the user with the specified ID with the new data.
 @app.route('/update/<id>', methods = ['PUT'])
 def updateData(id):
     currentCollection = mongo.db.users
