@@ -1,16 +1,36 @@
+# Flask Application for CRUD operations on MongoDB
+
+## OutPut Link: https://flask-mongodb-crud-rest-api.herokuapp.com/
+
+# 🐧 Linux UBUNTU SETUP
+![image](https://user-images.githubusercontent.com/80549753/216788195-692e245a-c8d4-4044-84e6-42c789d28a75.png)
+
+
+> Clone repo
 ```bash
-pip install Flask pymongo
+git clone https://github.com/Ayon-SSP/Flask-mongodb-CRUD-REST-API
+cd Flask-mongodb-CRUD-REST-API
 ```
 
-# GET
-![image](https://user-images.githubusercontent.com/80549753/228313840-927d23d5-b640-4759-8f89-7f6ee48f235f.png)
-![image](https://user-images.githubusercontent.com/80549753/228313713-270f42ce-0c05-4c67-9f2a-4cd742e49587.png)
-
-# POST
-![image](https://user-images.githubusercontent.com/80549753/228313650-d9496c00-fcd7-40a4-b01f-60ea9967b4ac.png)
-
-# DELETE
-![image](https://user-images.githubusercontent.com/80549753/228313563-b16f160d-a547-4143-b78d-2a19d0d187b3.png)
-
-# PUT
-![image](https://user-images.githubusercontent.com/80549753/228313495-d61d2791-6cc7-40c3-9067-d30891da89d6.png)
+> Install virtual env and activate
+```bash
+sudo apt install python3-venv
+python3 -m venv my-env
+source my-env/bin/activate
+```
+> **If Manual Install** Install req & Check if flask & ALL req is installed
+```bash
+pip install -r requirements.txt
+pip list
+```
+> Run app & mongo
+```bash
+pythno3 app.py
+```
+```bash
+mongo
+```
+> ⚠️ To Deactivate Virtual Env
+```bash
+deactivate
+```
