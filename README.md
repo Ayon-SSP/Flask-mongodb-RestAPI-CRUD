@@ -1,6 +1,6 @@
 # Flask Application for CRUD operations on MongoDB
 
-## OutPut Link: https://flask-mongodb-crud-rest-api.herokuapp.com/
+## `OutPut Link:` https://github.com/Ayon-SSP/Flask-mongodb-CRUD-REST-API/blob/master/OutPut/VDO_PostMan.md
 
 # 🐧 Linux UBUNTU SETUP
 ![image](https://user-images.githubusercontent.com/80549753/216788195-692e245a-c8d4-4044-84e6-42c789d28a75.png)
