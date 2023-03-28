@@ -1,6 +1,6 @@
 # Flask Application for CRUD operations on MongoDB
 
-## `OutPut Link:` [🎥 Video](https://github.com/Ayon-SSP/Flask-mongodb-CRUD-REST-API/blob/master/OutPut/VDO_PostMan.md)
+## `OutPut Link:` 📺 ReadMe](https://github.com/Ayon-SSP/Flask-mongodb-CRUD-REST-API/blob/master/OutPut/VDO_PostMan.md)
 ![image](https://user-images.githubusercontent.com/80549753/228369489-5c8ff3f6-f3b0-48c3-a2f2-dc91597ce431.png)
 
 
