@@ -42,8 +42,6 @@ def postData():
         return jsonify({'message': 'Error'})
 
 
-
-
 @app.route('/deleteData/<id>', methods = ['DELETE'])
 def deleteData(id):
     currentCollection = mongo.db.users
