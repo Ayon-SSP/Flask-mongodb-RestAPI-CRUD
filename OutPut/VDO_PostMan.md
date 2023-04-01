@@ -1,4 +1,4 @@
-# [🎥 Video](https://github.com/Ayon-SSP/Flask-mongodb-CRUD-REST-API/blob/master/OutPut/VDO_PostMan.md)
+# [🎥 Video](https://www.youtube.com/watch?v=owo0bXQ5COc)
 
 # GET
 ![image](https://user-images.githubusercontent.com/80549753/228313840-927d23d5-b640-4759-8f89-7f6ee48f235f.png)
